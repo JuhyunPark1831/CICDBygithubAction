@@ -38,7 +38,7 @@ jobs:
        with:
         host: ${{ secrets.HOST }}
         username: ${{ secrets.USERNAME }}
-        password: ${{ secretts.PASSWORD }}
+        password: ${{ secrets.PASSWORD }}
         script:
          echo "테스트 출력"
       # - name: Download artifact
