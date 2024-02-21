@@ -7,11 +7,11 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class HomeController {
 
-    @Value("${app.version:1.0.0")
-    String version;
+    @Value("${app.test}")
+    String testvalue;
 
     @GetMapping("/")
     public String home() {
-        return "Helloasdfa CICD! version: " + version;
+        return "Hello CICD! TestValue: " + testvalue;
     }
 }
